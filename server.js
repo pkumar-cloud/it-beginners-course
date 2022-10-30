@@ -26,7 +26,6 @@ app.get('/get-profile', async function(req, res) {
     client.close()
 
     response = {}
-
     if (result !== null) {
         response = {
             name: result.name,
@@ -34,7 +33,6 @@ app.get('/get-profile', async function(req, res) {
             interests: result.interests
         }
     }
-    
     res.send(response)
 })
 
