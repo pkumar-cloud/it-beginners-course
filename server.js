@@ -53,9 +53,9 @@ app.post('/update-profile', async function(req, res) {
         const collection = db.collection(collName)
 
         // save payload data to the database
-        payload['id'] = 1;
+        payload['id'] = 1
         const updatedValues = { $set: payload }
-        await collection.updateOne({id: 1}, updatedValues, {upsert: true});
+        await collection.updateOne({id: 1}, updatedValues, {upsert: true})
         client.close()
 
         res.send({info: "user profile data updated successfully"})
