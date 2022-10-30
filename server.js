@@ -26,12 +26,14 @@ app.get('/get-profile', async function(req, res) {
     console.log(result)
     client.close()
 
-    const response = {
-        name: result.name,
-        email: result.email,
-        interests: result.interests
+    response = {}
+    if (result !== null) {
+        response = {
+            name: result.name,
+            email: result.email,
+            interests: result.interests
+        }
     }
-
     res.send(response)
 })
 
