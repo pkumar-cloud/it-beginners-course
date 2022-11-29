@@ -1,5 +1,4 @@
-
-    var post1 = {
+var post1 = {
     content: 'This is my super post', 
     likes: 300, 
     shares: 20
@@ -54,13 +53,13 @@ console.log(users)
 
 // NESTED LOOPS
 var users = [facebookUserOne, facebookUserTwo]
-    for (user of users) {
-        user.interests = []
-        for (post of user.posts) {
-            post.reactions = post.likes
-            delete post.likes
-        }
+for (user of users) {
+    user.interests = []
+    for (post of user.posts) {
+        post.reactions = post.likes
+        delete post.likes
     }
-    console.log("we are done with users loop")
-    console.log(users)
+}
+console.log("we are done with users loop")
+console.log(users)
 
