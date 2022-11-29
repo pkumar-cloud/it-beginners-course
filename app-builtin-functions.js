@@ -22,12 +22,12 @@ var fullNames = ["Anna Smith", "Steve Black", "Kate Baker"]
 // loop through and turn the array of fullnames into array of objects with name and lastname
 var firstAndLastNames = []
 for (fullName of fullNames) {
-	names = fullName.split(/\s+/)		
-	var firstAndLastName = {
+    names = fullName.split(/\s+/)
+    var firstAndLastName = {
 		firstName: names[0],
-		lastName: names[1],
-	}
-	firstAndLastNames.push(firstAndLastName)
+		lastName: names[1]
+    }
+    firstAndLastNames.push(firstAndLastName)
 }
 
 console.log(firstAndLastNames)
@@ -72,7 +72,7 @@ function getAge(birthDateString) {
 
 var users = [facebookUserOne, facebookUserTwo]
 for (user of users) {
-	user.age = getAge(user.birthDate)
+    user.age = getAge(user.birthDate)
 }
 
 console.log(users)
