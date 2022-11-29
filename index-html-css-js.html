@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+        <link rel="icon" type="image/png" href="favicon/favicon.png">
+    </head>
+    <script>
+        function handleCreatePost() {
+            document.getElementById("post-form-container").style.display = "block"
+        }
+        function hidePostForm() {
+            document.getElementById("post-form-container").style.display = "none"
+        }
+    </script>
+
+    <body>
+        <div id="header-container">
+            <div id="header">
+                <div id="logo-search-container">
+                    <img id="logo" src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png">
+                    <input type="text" placeholder="Search..."/>
+                </div>
+                <button id="show-btn" onclick="handleCreatePost()">Create post</button>
+            </div>
+        </div>
+
+        <div id="post-form-container">
+            <form>
+                <label for="title"><b>Title</b></label>
+                <input type="text" name="title" placeholder="Enter Title" />
+
+                <label><b>Description</b></label>
+                <input type="text" placeholder="Description" />
+
+                <label><b>Post</b></label>
+                <textarea placeholder="Your post..."></textarea>
+                <button id="save-btn" onclick=savePost()>Save post</button>
+                <button id="hide-btn" onclick=hidePostForm()>Hide form</button>
+            </form>
+        </div>
+
+        <div id="main-section-container">
+            <div id="article-section-container">
+                <img id="article-cover" src="https://res.cloudinary.com/practicaldev/image/fetch/s--xqaFZD0F--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/b15hcjp6pmjoaych9aem.png"/>
+                <div>
+                    <h1>An amazing article title</h1>
+                    <h3>Some short info on the article</h3>
+                    <p class="article-info"><i>written by: Nana Janashia</i></p>
+                    <p class="article-info"><i>date: 2022.10.21</i></p>
+                </div>
+
+                <div>
+                    <p>paragraph 1</p>
+                    <p>paragraph 2</p>
+
+                    <h4>Section header</h4>
+                    <p>paragraph 1</p>
+                    <p>This is a list of things you should do</p>
+                    <ul>
+                        <li>item 1</li>
+                        <li>item 2</li>
+                        <li>item 3</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="side-section-container">
+                <div>
+                    <h2>Side Section</h2>
+                    <h3>Another article title</h3>
+                    <h4>Short description</h4>
+                    <a href="https://dev.to/techworld_with_nana/gitlab-cicd-for-beginners-free-course-2mee">Click to see article</a>
+                </div>
+
+                <div>
+                    <h2>Also Side Section</h2>
+                    <h3>Another article title</h3>
+                    <h4>Short description</h4>
+                    <a href="https://dev.to/techworld_with_nana/sre-and-tasks-of-an-sre-explained-3ah9">Click to see article</a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="footer">
+            <p>This is the footer</p>
+        </div>
+    </body>
+
+    <style>
+        body {
+            background-color: #dae9eb;
+            margin: 0;
+        }
+        .article-info {
+            color: grey;
+        }
+        a {
+            color: blue;
+            font-size: 10px;
+        }
+        #article-cover {
+            width: 100%;
+        }
+        #logo {
+            width: 30px;
+        }
+
+        #main-section-container {
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            margin: 15px auto;
+        }
+        #logo-search-container {
+            display: flex;
+        }
+        #header input {
+            margin-left: 10px;
+            font-size: 15px;
+            border-radius: 5px;
+            width: 300px;
+            padding-left: 10px;
+            border: 1px solid lightgray;
+        }
+        #article-section-container {
+            width: 70%;
+            background-color: white;
+        }
+        #article-section-container div {
+            padding: 15px;
+        }
+        #side-section-container {
+            width: 30%;
+            margin-left: 15px;
+        }
+        #side-section-container div {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        #header-container {
+            background-color: white;
+        }
+        #header {
+            display: flex;
+            justify-content: space-between;
+            height: 50px;
+            align-items: center;
+            width: 80%;
+            margin: auto;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 15px;
+            color: blue;
+            border: 1px solid blue;
+            border-radius: 5px;
+            background-color: white;
+        }
+        #hide-btn {
+            color: darkred;
+            border: 1px solid darkred;
+        }
+        #save-btn {
+            color: darkcyan;
+            border: 1px solid darkcyan;
+        }
+        #footer {
+            background-color: white;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        button:hover {
+            cursor: pointer;
+        }
+        a:visited {
+            color: grey;
+        }
+
+        #post-form-container {
+            max-width: 300px;
+            padding: 10px;
+            margin: auto;
+            display: none
+        }
+
+        #post-form-container input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px 0;
+        }
+    </style>
+</html>

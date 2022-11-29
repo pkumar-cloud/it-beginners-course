@@ -1,0 +1,143 @@
+<body>
+    <div id="header-wrapper">
+        <div id="header">
+            <div id="logo-search-container">
+                <img id="logo" src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png" />
+                <input type="text" placeholder="Search..."/>
+            </div>
+            <button>log in</button>
+        </div>
+    </div>
+
+    <div id="main-section-container">
+        <div id="article-section">
+            <img id="article-cover" src="cover.webp"/>
+            <div>
+                <h1>Article title</h1>
+                <h3>Short information on article</h3>
+                <p class="article-info"><i>written by: Nana Janashia</i></p>
+                <p class="article-info"><i>date: 2022.10.21</i></p>
+            </div>
+
+            <div>
+                <p>paragraph 1</p>
+                <p>paragraph 2</p>
+
+                <h4>section header</h4>
+                <p>paragraph 1</p>
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div id="side-section">
+            <div>
+                <h2>Side section</h2>
+                <h3>Another article title</h3>
+                <h4>Another article short info</h4>
+                <a href="https://dev.to/techworld_with_nana/sre-and-tasks-of-an-sre-explained-3ah9">Click to see article</a>
+            </div>
+
+            <div>
+                <h2>Also Side section</h2>
+                <h3>article title</h3>
+                <h4>short description</h4>
+                <a href="https://dev.to/techworld_with_nana/gitlab-cicd-for-beginners-free-course-2mee">Click to see article</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>This is the footer</p>
+    </div>
+</body>
+
+<style>
+
+    body {
+        background-color: #d6e4ee;
+        margin: 0;
+    }
+    
+    a {
+       color: blue;
+       font-size: 10px;
+    }
+
+    #logo {
+        width: 50px;
+    }
+    #article-cover {
+        width: 100%;
+    }
+    .article-info {
+        color: grey;
+    }
+
+    #main-section-container {
+        display: flex;
+        width: 80%;
+        margin: 15px auto;
+    }
+
+    #header-wrapper {
+        background-color: white;
+    }
+
+    #header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        width: 80%;
+        margin: auto;
+    }
+
+    #logo-search-container {
+        display: flex;
+    }
+
+    #header input {
+        margin-left: 10px;
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid lightgrey;
+        width: 300px;
+    }
+
+    #article-section {
+        width: 70%;
+        background-color: white;
+    }
+    #article-section div {
+        padding: 15px;
+    }
+    #side-section {
+        width: 30%;
+        margin-left: 15px;
+    }
+    #side-section div {
+        background-color: white;
+        padding: 5px 15px 20px 20px;
+        margin-bottom: 15px;
+    }
+    #footer {
+        background-color: white;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 10px 20px;
+        color: blue;
+        border: 1px solid blue; 
+        border-radius: 5px;
+        background-color: white;
+    }
+</style>
