@@ -57,8 +57,7 @@ function getAge(birthDateString) {
     var birthDate = new Date(birthDateString)
 
     var age = today.getFullYear() - birthDate.getFullYear()
-
-	var birthdayMonthInFuture = today.getMonth() < birthDate.getMonth()
+    var birthdayMonthInFuture = today.getMonth() < birthDate.getMonth()
     var sameMonthDateInFuture = today.getMonth() === birthDate.getMonth() 
         && today.getDate() < birthDate.getDate()
     
