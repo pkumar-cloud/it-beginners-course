@@ -40,7 +40,7 @@ var facebookUserOne = {
     email: 'nn@example.com', 
     profileImage: 'reference-image',
     friends: ['Mike', 'Anna', 'Jenny'],
-	birthDate: "1996/08/18" // or "1996.08.18"
+    birthDate: "1996/08/18" // or "1996.08.18"
 }
 
 var facebookUserTwo = {
@@ -49,7 +49,7 @@ var facebookUserTwo = {
     email: 'mike@example.com', 
     profileImage: 'reference-image',
     friends: ['Steve', 'Nana', 'Julia'],
-	birthDate: "2003/03/10"
+    birthDate: "2003/03/10"
 }
 
 function getAge(birthDateString) {
