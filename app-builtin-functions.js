@@ -24,8 +24,8 @@ var firstAndLastNames = []
 for (fullName of fullNames) {
     names = fullName.split(/\s+/)
     var firstAndLastName = {
-		firstName: names[0],
-		lastName: names[1]
+        firstName: names[0],
+        lastName: names[1]
     }
     firstAndLastNames.push(firstAndLastName)
 }
