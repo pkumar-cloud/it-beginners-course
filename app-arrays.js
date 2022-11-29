@@ -1,21 +1,21 @@
 var facebookUserOne = {
-	userName: "Nana",
-	password: "supersecretpassword",
-	email: "nn@nn.com",
-	profileImage: "imagereference",
-	friends: ["Mike01", "Anna33"],
-	images: ["image1", "image2"],
-	posts: ["post1", "post2"]
+   userName: "Nana",
+   password: "supersecretpassword",
+   email: "nn@nn.com",
+   profileImage: "imagereference",
+   friends: ["Mike01", "Anna33"],
+   images: ["image1", "image2"],
+   posts: ["post1", "post2"]
 }
 
 var facebookUserTwo = {
-	userName: "Tina",
-	password: "mypassword",
-	email: "ti@example.com",
-	profileImage: "imagereference",
-	friends: ["Nana", "Steve"],
-	images: ["image1", "image2"],
-	posts: ["post1", "post2"]
+   userName: "Tina",
+   password: "mypassword",
+   email: "ti@example.com",
+   profileImage: "imagereference",
+   friends: ["Nana", "Steve"],
+   images: ["image1", "image2"],
+   posts: ["post1", "post2"]
 }
 
 var facebookUsers = [facebookUserOne, facebookUserTwo]
@@ -25,11 +25,11 @@ facebookUsers[0]
 
 // add element in array
 facebookUsers[2] = {
-	userName: "newuser",
-	password: "mypwd",
-	email: "nu@example.com",
-	profileImage: "imagereference",
-	friends: [], // empty array
+   userName: "newuser",
+   password: "mypwd",
+   email: "nu@example.com",
+   profileImage: "imagereference",
+   friends: [], // empty array
 }
 
 // see the number of elements
