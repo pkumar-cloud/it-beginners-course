@@ -1,3 +1,4 @@
-script:
+run_tests:
+  script:
     - npm install
     - npm run test
