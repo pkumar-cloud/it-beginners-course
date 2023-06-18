@@ -40,7 +40,7 @@ facebookUsers[facebookUsers.length] = newUser
 
 // add 1 item in the posts array in object - nested array
 facebookUsers[0].posts[0]
-facebookUsers[0].posts[lengths] = "post3"
+facebookUsers[0].posts[length] = "post3"
 facebookUsers[0].posts.push()
 
 // remove last post in posts array in object - nested array
